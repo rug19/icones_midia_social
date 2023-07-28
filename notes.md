@@ -24,15 +24,11 @@ A tag <span> é um contêiner embutido usado para marcar uma parte de um texto o
 
 A  propriedade transform aplica uma transformação 2D ou 3D a um elemento. Esta propriedade permite girar, dimensionar, mover, inclina, etc., elementos.
 
-### Rotate
+- Rotate: Rotaciona o elemento para esquerda e direita conforme o valor em deg (grau celsius), sendo que número possito rotaciona para direita e númerp negativa rotaciona para esquerda.
 
-Rotaciona o elemento para esquerda e direita conforme o valor em deg (grau celsius), sendo que número possito rotaciona para direita e númerp negativa rotaciona para esquerda.
+transform: rotate(20deg);
 
-<em>transform: rotate(20deg)</em>
-
-### Rotate x e y
- 
-Rotaciona o elemento no eixo vertical (y) e horizontal (x)também utilizando o valor deg (grau celsius). 
+- Rotate x e y: Rotaciona o elemento no eixo vertical (y) e horizontal (x) também utilizando o valor deg (grau celsius). 
 
 transform: rotatex(20deg);
 
