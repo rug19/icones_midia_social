@@ -1,4 +1,4 @@
-# Projeto Mídia social
+# Anotações do Projeto Mídia social
 
 - Criar as camandas utilizando a tag <span>.
 
@@ -12,7 +12,7 @@
 
 - nth-child ()
 
-##  Tag <span>
+### Tag <span>
 
 A tag <span> é um contêiner embutido usado para marcar uma parte de um texto ou uma parte de um documento. 
 
@@ -20,20 +20,31 @@ A tag <span> é um contêiner embutido usado para marcar uma parte de um texto o
 
 É muito parecida com o elemento <div>, mas <div> é um elemento de nível de bloco e <span> é um elemento inline. 
 
-## Propriedade de tranformação CSS
+### Propriedade de tranformação CSS
 
 A  propriedade transform aplica uma transformação 2D ou 3D a um elemento. Esta propriedade permite girar, dimensionar, mover, inclina, etc., elementos.
 
-- Rotate: Rotaciona o elemento para esquerda e direita conforme o valor em deg (grau celsius), sendo que número possito rotaciona para direita e númerp negativa rotaciona para esquerda.
-
+### Rotate
+ 
+Rotaciona o elemento para esquerda e direita conforme o valor em deg (grau celsius), sendo que número possito rotaciona para direita e númerp negativa rotaciona para esquerda.
+````
 transform: rotate(20deg);
+````
 
-- Rotate x e y: Rotaciona o elemento no eixo vertical (y) e horizontal (x) também utilizando o valor deg (grau celsius). 
+   <div align="center" justify-content="center">
+   <img src="assets/img_note/transform_rotate.gif/">
+   </div>
+   <br>
+   
+### Rotate x e y
 
+Rotaciona o elemento no eixo vertical (y) e horizontal (x) também utilizando o valor deg (grau celsius). 
+````
 transform: rotatex(20deg);
-
+````
+````
 transform: rotateY(45deg);
-
+````
 - Skew: O método inclina um elemento ao longo dos eixos X e Y  pelo ângulos fornecidos. O exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo X e 10 graus ao longo do eixo Y: 
 
 transform: skew(20deg, 10deg);
