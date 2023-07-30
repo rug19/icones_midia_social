@@ -38,7 +38,7 @@ transform: rotate(20deg);
    
 ### Rotate x e y
 
-Rotaciona o elemento no eixo vertical (y) e horizontal (x) também utilizando o valor deg (grau celsius). 
+Rotaciona o elemento no eixo vertical (y) e horizontal (x) também utilizando o valor deg (grau). 
 ````
 transform: rotatex(20deg);
 ````
