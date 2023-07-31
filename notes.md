@@ -12,58 +12,86 @@
 
 - nth-child ()
 
-### Tag <span>
+## Tag <span>
 
-A tag <span> é um contêiner embutido usado para marcar uma parte de um texto ou uma parte de um documento. 
+A tag <span> é um contêiner embutido usado para marcar uma parte de um texto ou uma parte de um documento. É facilamente estilizada por CSS ou manipulada com JavaScript usando o atributo class ou id. É também muito parecida com o elemento <div>, mas <div> é um elemento de nível de bloco e <span> é um elemento inline. 
 
-É facilamente estilizada por CSS ou manipulada com JavaScript usando o atributo class ou id.
-
-É muito parecida com o elemento <div>, mas <div> é um elemento de nível de bloco e <span> é um elemento inline. 
-
-### Propriedade de tranformação CSS
+## Propriedade de tranformação CSS 2D
 
 A  propriedade transform aplica uma transformação 2D ou 3D a um elemento. Esta propriedade permite girar, dimensionar, mover, inclina, etc., elementos.
 
-### Rotate
- 
-Rotaciona o elemento para esquerda e direita conforme o valor em deg (grau celsius), sendo que número possito rotaciona para direita e númerp negativa rotaciona para esquerda.
-````
+- O translate ()método move um elemento de sua posição atual (de acordo com os parâmetros fornecidos para o eixo X (horizontal) e o eixo Y (vertical)). No exemplo abaixo o elemento esta movendo 50px para direita e 100px para baixo conforme sua posiução atual. 
+
+transform: translate (50px, 100px);
+
+- O rotate() método gira um elemento no sentido horário ou anti-horário de acordo com um determinado grau. No exemplo abaixo o elemntyo está movendo 20 graus para a direita. número positivo rotaciona para a direita e número negativo rotacionaoara esquerda.
+
 transform: rotate(20deg);
-````
 
-   <div align="center" justify-content="center">
-   <img src="assets/img_note/transform_rotate.gif/">
-   </div>
-   <br>
-   
-### Rotate x e y
+- O scale()método aumenta ou diminui o tamanho de um elemento (de acordo com os parâmetros fornecidos para largura e altura). 
 
-Rotaciona o elemento no eixo vertical (y) e horizontal (x) também utilizando o valor deg (grau celsius). 
-````
-transform: rotatex(20deg);
-````
-````
-transform: rotateY(45deg);
-````
-- Skew: O método inclina um elemento ao longo dos eixos X e Y  pelo ângulos fornecidos. O exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo X e 10 graus ao longo do eixo Y: 
+Aumentando duas vezes a sua largura original e 3 vezes  a altura original. 
 
-transform: skew(20deg, 10deg);
+transform: scale(2, 3);
 
-- SkewX: O método inclina um elemento ao longo do eixo x pelo ângulo dado. O exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo X: 
+Diminuindo 
 
-transform: skewX(20deg);
+transform: scale(0.5, 0.5)
 
-- SkewY: O método inclina um elemento ao longo do eixo Y pelo ângulo dado. O exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo Y:
+Podemos também Aumenta ou diminuir somente a lagura utilizando o eixo X e y.
 
-transform: skewY(20deg);
+Aumentando eixo X (horizontal) e eixo y (vertical)
 
--  Translate: O método translate move um elemento de sua posição atual de acordo com o parâmetros fornecidos para o eixo X e o Y. O exemplo a seguir move o elemnto <div> 5 pixels para a direita e 100 pixels para baixo de sua posição atual:
-   
-transform: translate(50px, 100px);
+transform: scalex(2)
+transform: scaley(2)
 
-- Scale: O método aumenta ou diminui o tamanho de um elemento de acordo com os parâmetros fornecidos para largura e altura. O exemplo a seguir aumenta o elemento para duas vezes sua largura original e três vezes sua altura original: 
+Diminuindo eixo X (horizontal) e eixo y (vertical)
 
-transform: scale(0.5, 0.5);
+transform: scalex(0.5)
+
+transform: scaley(0.5)
+
+- O skew() um método inclina um elemento ao longo dos eixos X e Y pelos ângulos fornecidos. O exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo X e 10 graus ao longo do eixo Y:
+
+div {
+  transform: skew(20deg, 10deg);
+}
+
+Se o segundo parâmetro não for especificado, ele terá um valor zero. Portanto, o exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo X:
+
+
+div {
+  transform: skew(20deg);
+}
+
+Podemos também inclinar somente o X ou Y especificadamente.
+
+O exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo X:
+
+div {
+  transform: skewX(20deg);
+}
+
+O exemplo a seguir inclina o elemento <div> 20 graus ao longo do eixo Y:
+
+div {
+  transform: skewY(20deg);
+}
+
+- O matrix()método combina todos os métodos de transformação 2D em um.
+
+O método matrix() recebe seis parâmetros, contendo funções matemáticas, que permitem girar, dimensionar, mover (traduzir) e inclinar elementos.
+
+Os parâmetros são os seguintes: matrix (scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+
+div {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+
+
+
+
 
 
     
