@@ -30,8 +30,6 @@ transform: rotate(20deg);
 
 - O scale()método aumenta ou diminui o tamanho de um elemento (de acordo com os parâmetros fornecidos para largura e altura). 
 
-Aumentando duas vezes a sua largura original e 3 vezes  a altura original. 
-
 transform: scale(2, 3);
 
 Diminuindo 
