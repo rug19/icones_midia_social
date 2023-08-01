@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .ctn-social {
+    width: 70px;
+    height: 70px;
+    margin: 0 30px;
+    /* Foi rotacionado a 30 graus negativo e inclinado 25 graus */
+    transform: rotate(-30deg) skew(25deg);
+    background: #ccc;
+}
+
+.ctn-social span{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+
