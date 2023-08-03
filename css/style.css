@@ -27,7 +27,7 @@ span {
     transition: 0.5s;
 }
 
-.ctn-social span:nth-child(5){
+.ctn-social span:nth-child(5) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,5 +75,5 @@ span {
 }
 
 .ctn-social:nth-child(5) span {
-    background: #e4405f;
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
