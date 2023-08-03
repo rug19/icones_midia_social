@@ -27,6 +27,12 @@ span {
     transition: 0.5s;
 }
 
+.ctn-social span:nth-child(5){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .ctn-social:hover span:nth-child(1) {
     transform: translate(0, 0);
     opacity: 0.2;
